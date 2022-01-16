@@ -1,0 +1,163 @@
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.container {
+    margin: auto;
+    padding-top: 30px;
+    max-width: 95%;
+}
+
+.hand {
+    margin: 30px 0px;
+    border-bottom: 3px solid #ccc;
+}
+
+#fieldTranslationAlgorithm{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#translationAlgorithm{
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: #000;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.text{
+    display: flex;
+}
+
+.navi{
+    max-height: 40px;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.combobox{
+    padding: 5px;
+    width: 49%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: #000;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#refIco{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+#refIco:hover {
+    background-color: lightcyan;
+}
+
+.fields{
+    float: left;
+    background: transparent;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    width: 50%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    color: inherit;
+}
+
+.textarea{
+    box-sizing: border-box;
+    outline: none;
+    padding: 5px;
+    resize: none;
+    background: transparent; 
+    height: 80%;
+    border: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    color: inherit;
+}
+
+#translatableLanguage{
+    cursor: initial;
+}
+
+#fieldsTranslated, 
+#translatedLanguage{
+    background-color: #ddd;
+    cursor: initial;
+}
+
+.buttonsPanel{
+    box-sizing: border-box;
+    padding: 5px;
+    height: 20%;
+    border-top: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    color: inherit;
+}
+
+.buttons{
+    float: right;
+    border-radius: 25%;
+    height: 70%;
+    margin: 0px 2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: lightcyan;
+} 
+
+#copyrated{
+    margin-top: 10%;
+    /* border-top: 1px solid #ccc; */
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* #refIco{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}*/

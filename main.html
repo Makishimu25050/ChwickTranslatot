@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chwick</title>
+		<link href="styles.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="orc.png" type="image/x-icon">
+	</head>
+	<body>
+
+		<div class="container">
+			<h1 class="hand">Chwick переводчик</h1>
+			<div id="fieldTranslationAlgorithm">
+			<label for="" id="">Алгоритм перевода:</label>
+				<select name="translationAlgorithm" id="translationAlgorithm">
+					<option value="1">1</option>
+					<option value="2">2</option>
+				</select>
+			</div>
+			<div class="navi">
+				<input id="translatableLanguage" type="text" class="combobox" readonly> 
+				<img src="reverse.png" alt="" id="refIco" /> 
+				<input id="translatedLanguage" type="text" class="combobox" readonly> 
+			</div>
+			<div class="text">
+				<div class="fields">
+					<textarea id="textTranslatable"  class="textarea"></textarea>
+					<div class="buttonsPanel">
+					</div>
+				</div>
+				<div class="fields" id="fieldsTranslated">
+					<textarea id="textTranslated" class="textarea" readonly></textarea>
+					<div class="buttonsPanel">
+						<img src="share.png" alt="" id="butShare" class="buttons"/> 
+						<img src="copy.png" alt="" id="butCopy" class="buttons"/> 
+					</div>
+				</div>
+			</div>
+
+			<!-- <details>
+				<summary>Примечание</summary>
+				<p>Здесь будет описание алгоритма</p>
+			</details  id="Note"> -->
+
+			<label for="copyrated" id="copyrated">© 2021 Makishimu25050</label>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
