@@ -25,6 +25,19 @@ arrFullOr.push('вв', 'ии', 'аа')
 arrFullRu.push('э', 'ю', 'я')
 arrFullOr.push('чч', 'кк', 'тт')
 
+console.log(arrFullRu);
+console.log(arrFullOr);
+console.log(arrRu);
+strrrr=[33]
+for (pos = 0; pos<33; pos++){
+  let bin = (pos + 1).toString(2); //Пеоеводим позицию символа в строке алфавита в бинарный вид
+  bin = '00000'.substr(0, 5 - bin.length) + bin; //Добавляем необхобимое количество 0 в бинарную строку (до длины строки равной 5)
+  let letterOr = ''; //Буква, закодированная в Орочий
+  for (let i = 0; i < 5; i++) //Цикл по бинарной строке
+    letterOr += (bin[i] === '1' ? wordChwick[i]: '');
+    strrrr[pos] = letterOr
+}
+console.log(strrrr);
 //Текущий режим перевода
 let currentMode = 'RuToOr'
 
@@ -120,7 +133,38 @@ const butShare = document.querySelector('#butShare')
 //Поле ввода переводимого текста
 const cBTranslationAlgorithm = document.querySelector('#translationAlgorithm')
 
+//Кнопка ссылки на проект Github
+const linkToGithub = document.querySelector('#linkToGithub')
+let linkToGithubDefaultStyle = linkToGithub.style.display
+linkToGithub.style.display = "none";
+
 //#endregion
+
+//Событие нажатия клавиши
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+
+  if (keyName === 'Control') {
+    return;
+  }
+
+  if (event.ctrlKey) {
+    if (keyName == "Shift"){
+      linkToGithub.style.display = linkToGithubDefaultStyle
+    }
+  } 
+}, false);
+
+//Событие отжатия клавиши
+document.addEventListener('keyup', (event) => {
+  const keyName = event.key;
+  linkToGithub.style.display = "none"
+}, false);
+
+//Событие нажатия на кнопку "Проект Github"
+linkToGithub.onclick = () => {
+  window.open("https://github.com/Makishimu25050/ChwickTranslatot", "_blank");
+}
 
 //Загрузка среды
 loadingEnvironment();
@@ -296,4 +340,3 @@ butShare.addEventListener('click', async () => {
 if (sessionStorage.getItem('visited')) {
   alert("qwe")
 }
-
